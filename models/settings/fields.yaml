@@ -1,0 +1,30 @@
+fields:
+    disabled_in_debug:
+        label: Disabled in debug mode
+        comment: If the site working in debug mode, notification will not be sent
+        type: checkbox
+        span: left
+
+    disabled_for_admins:
+        label: Disabled for admins
+        comment: If the user is authorized in the backend, notification will not be sent
+        type: checkbox
+        span: right
+
+    telegram_token:
+        label: Bot token
+        span: left
+
+    telegram_chat_id:
+        label: User chat id
+        span: right
+
+    disabled_exceptions:
+        label: Disabled notification
+        commentAbove: This exceptions will be ignored
+        span: full
+        type: repeater
+        form:
+            fields:
+                class_name:
+                    label: Class name
